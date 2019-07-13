@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{{HtmlWebpackPlugin.options.title}}</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=57dcb681-604f-4de7-afb8-13f6706523e4&lang=ru_RU"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        {{> "./src/templates/map.hbs"}}
+        {{> "./src/templates/popup.hbs"}}
+    </main>
+</body>
+</html>

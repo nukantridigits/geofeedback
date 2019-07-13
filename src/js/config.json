@@ -1,0 +1,38 @@
+{
+  "map": {
+    "options": {
+      "default": {
+        "center": [
+          55.75222,
+          37.61556
+        ],
+        "zoom": 13,
+        "controls": []
+      },
+      "additional": {
+        "searchControlProvider": "yandex#search",
+        "suppressMapOpenBlock": true
+      }
+    },
+    "controls": {
+      "zoom": {
+        "options": {
+          "size": "large",
+          "position": {
+            "top": 70,
+            "left": 30
+          }
+        }
+      },
+      "fullscreen": {
+        "options": {
+          "size": "small",
+          "position": {
+            "top": 20,
+            "left": 30
+          }
+        }
+      }
+    }
+  }
+}

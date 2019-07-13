@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=57dcb681-604f-4de7-afb8-13f6706523e4&lang=ru_RU"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <div id="map"></div>
+        <div class="modal hide" id="modal">
+            <div class="modal__header">
+                <span class="modal__header-inner">
+                    <i class="fa fa-map-marker modal__header-marker"></i>
+                    <span class="modal__header-text" id="modal-address"></span>
+                    <i class="fa fa-times btn-close" id="btn-close"></i>
+                </span>
+            </div>
+            <div class="modal__main">
+                <div class="modal__main-feedbacks" id="feedbacks">
+                    <ul class="feedback__list" id="feedbacks-list">
+                    </ul>
+                </div>
+                <hr class="line">
+                <div class="modal__form">
+                    <div class="modal__form-label">Ваш отзыв</div>
+                    <form id="feeedback-form" name="form">
+                        <input type="text" id="inputName" name="name" placeholder="Ваше имя" class="modal__input"
+                               required>
+                        <input type="text" id="inputPlace" name="place" placeholder="Укажите место" class="modal__input"
+                               required>
+                        <textarea name="message" id="inputReview" placeholder="Поделитесь впечатлениями"
+                                  class="modal__textarea"
+                                  required></textarea>
+                        <input type="submit" data-add="true" class="save__btn" id="btn" value="Добавить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="dist/app.js"></script></body>
+</html>
